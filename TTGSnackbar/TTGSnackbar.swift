@@ -283,6 +283,8 @@ open class TTGSnackbar: UIView {
         }
     }
     
+    @objc open var activityIndicatorView: UIActivityIndicatorView!
+    
     /// ActivityIndicatorViewStyle
     @objc open dynamic var activityIndicatorViewStyle: UIActivityIndicatorView.Style {
         get {
@@ -317,7 +319,6 @@ open class TTGSnackbar: UIView {
     fileprivate var separateView: UIView!
     fileprivate var actionButton: UIButton!
     fileprivate var secondActionButton: UIButton!
-    fileprivate var activityIndicatorView: UIActivityIndicatorView!
     
     /// Timer to dismiss the snackbar.
     fileprivate var dismissTimer: Timer? = nil
